@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M5 5v14l8-7zM13 5v14l6-7z"/><rect x="19.5" y="5" width="2" height="14" rx="1"/></svg>
+    </div>
+    <div class="title">
+      <h1>YT Skip Shortcut</h1>
+      <span>Skip ads with one key</span>
+    </div>
+    <label class="switch" title="Enable / disable">
+      <input type="checkbox" id="enabled"><span class="slider"></span>
+    </label>
+  </header>
+
+  <section class="card">
+    <div class="label">Skip mode</div>
+    <div class="seg" id="mode">
+      <button data-mode="manual" class="seg-btn"><b>Manual</b><small>Press your shortcut</small></button>
+      <button data-mode="auto" class="seg-btn"><b>Auto</b><small>Skips by itself</small></button>
+    </div>
+  </section>
+
+  <section class="card" id="shortcutCard">
+    <div class="label">Your shortcut</div>
+    <button id="recorder" class="recorder">
+      <span id="keys" class="keys"></span>
+    </button>
+    <div class="row">
+      <span id="hint" class="hint">Click the box, then press your keys</span>
+      <button id="clear" class="link">Clear</button>
+    </div>
+  </section>
+
+  <section class="card stats">
+    <div>
+      <div class="num" id="count">0</div>
+      <div class="label">Ads skipped</div>
+    </div>
+    <label class="opt">
+      <input type="checkbox" id="showToast">
+      <span>Show messages</span>
+    </label>
+  </section>
+
+  <footer id="tip">Tip: use Ctrl / Alt / Shift + key to avoid clashing with typing.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
