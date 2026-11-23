@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YT Skip Shortcut",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Skip YouTube ads automatically or with your own keyboard shortcut.",
   "permissions": ["storage", "debugger"],
   "background": { "service_worker": "background.js" },
